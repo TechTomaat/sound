@@ -1,0 +1,20 @@
+{% extends "base.html"  %}
+
+{% block content %}
+<head>
+    <title>Latijn Leren</title>
+</head>
+<body>
+    <div id="container">
+        <h2>Latijn Leren</h2>
+        <p id="latijn-woord">woord</p>
+        <input type="text" id="antwoord" placeholder="Jouw vertaling">
+        <button onclick="controleerAntwoord()">Controleer</button>
+        <p id="feedback"></p>
+        <button id="volgendeButton" onclick="nieuwWoord()" style="display:none;">Volgende</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='controleren.js') }}"></script>
+</body>
+</html>
+{% endblock %}

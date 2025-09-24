@@ -1,0 +1,35 @@
+{% extends "base.html"  %}
+
+{% block content %}
+<head>
+    <title>Latijn Leren</title>
+</head>
+<body>
+    <div id="container">
+        <h2>Latijn Leren H4b</h2>
+        <p id="latijn-woord">woord</p>
+        <input type="text" id="antwoord" placeholder="Jouw vertaling">
+        <button onclick="controleerAntwoord()">Controleer</button>
+        <p id="feedback"></p>
+        <button id="volgendeButton" onclick="nieuwWoord()" style="display:none;">Volgende</button>
+        <button id="opdrachtOpnieuwButton" style="display: none;" onclick="opdrachtOpnieuw()">Opdracht Opnieuw</button>
+        <button id="homeschermButton" style="display: none;" onclick="gaNaarHome()">Terug naar Homescherm</button>
+    </div>
+    
+    <div class="container-tekst">
+        <p>Dit is een oefentekst die erg lang moet zijn om te kijken hoe het staat als hier regels Latijn uit Disco 1 staan.</p>
+        <p>Dit is een oefentekst die erg lang moet zijn om te kijken hoe het staat als hier regels Latijn uit Disco 1 staan.</p>
+        <p>Dit is een oefentekst die erg lang moet zijn om te kijken hoe het staat als hier regels Latijn uit Disco 1 staan.</p>
+        <p>Dit is een oefentekst die erg lang moet zijn om te kijken hoe het staat als hier regels Latijn uit Disco 1 staan.</p>
+        <p>Dit is een oefentekst die erg lang moet zijn om te kijken hoe het staat als hier regels Latijn uit Disco 1 staan.</p>
+        <p>Dit is een oefentekst die erg lang moet zijn om te kijken hoe het staat als hier regels Latijn uit Disco 1 staan.</p>
+        <p>Dit is een oefentekst die erg lang moet zijn om te kijken hoe het staat als hier regels Latijn uit Disco 1 staan.</p>
+        <p>Dit is een oefentekst die erg lang moet zijn om te kijken hoe het staat als hier regels Latijn uit Disco 1 staan.</p>
+        <p>Dit is een oefentekst die erg lang moet zijn om te kijken hoe het staat als hier regels Latijn uit Disco 1 staan.</p>
+        <p>Dit is een oefentekst die erg lang moet zijn om te kijken hoe het staat als hier regels Latijn uit Disco 1 staan.</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='scripts/2a.js') }}"></script>
+</body>
+</html>
+{% endblock %}

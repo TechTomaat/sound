@@ -1,0 +1,49 @@
+{% extends "base.html"  %}
+
+{% block content %}
+<body>
+    <main>
+        <section>
+            <h1>Oefeningen voor Disco 1</h1>
+           <div id="container-lijst">
+                <div class="dropdown">
+                    <button class="dropbtn">H2</button>
+                    <div class="dropdown-content">
+                        <a href="{{ url_for('hoofdstukken', naam='H2a') }}">H2a</a>
+                        <a href="{{ url_for('hoofdstukken', naam='H2b') }}">H2b</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">H3</button>
+                    <div class="dropdown-content">
+                        <a href="{{ url_for('hoofdstukken', naam='H3a') }}">H3a</a>
+                        <a href="{{ url_for('hoofdstukken', naam='H3b') }}">H3b</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">H4</button>
+                    <div class="dropdown-content">
+                        <a href="{{ url_for('hoofdstukken', naam='H4a') }}">H4a</a>
+                        <a href="{{ url_for('hoofdstukken', naam='H4b') }}">H4b</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">H5</button>
+                    <div class="dropdown-content">
+                        <a href="{{ url_for('hoofdstukken', naam='H5a') }}">H5a</a>
+                        <a href="{{ url_for('hoofdstukken', naam='H5b') }}">H5b</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">H6</button>
+                    <div class="dropdown-content">
+                        <a href="{{ url_for('hoofdstukken', naam='H6a') }}">H6a</a>
+                        <a href="{{ url_for('hoofdstukken', naam='H6b') }}">H6b</a>
+                    </div>
+                </div>
+           </div>
+        </section>
+    </main>
+</body>
+</html>
+{% endblock %}

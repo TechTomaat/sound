@@ -1,0 +1,39 @@
+{% extends "base.html"  %}
+
+{% block content %}
+<head>
+    <title>Latijn Leren</title>
+</head>
+<body>
+    <div id="container">
+        <h2>Latijn Leren H5b</h2>
+        <p id="latijn-woord">woord</p>
+        <input type="text" id="antwoord" placeholder="Jouw vertaling">
+        <button onclick="controleerAntwoord()">Controleer</button>
+        <p id="feedback"></p>
+        <button id="volgendeButton" onclick="nieuwWoord()" style="display:none;">Volgende</button>
+        <button id="opdrachtOpnieuwButton" style="display: none;" onclick="opdrachtOpnieuw()">Opdracht Opnieuw</button>
+        <button id="homeschermButton" style="display: none;" onclick="gaNaarHome()">Terug naar Homescherm</button>
+    </div>
+
+    <div class="container-tekst">
+        <p>Septem sorores ante toros fratrum stant et lacrimant.</p>
+        <p>Sed Diana non dubitat et tela in sorores mittit.</p>
+        <p>Statim una puella clamat: ‘Ei mihi!’ et cadit.</p>
+        <p>Sex puellae fugere temptant, sed frustra,</p>
+        <p>nam Diana quinque puellas telis necat.</p>
+        <p>Nunc una tantum filia restat.</p>
+        <p>Niobe filiam ultimam protegere temptat et clamat:</p>
+        <p>‘Desine, Diana! Ultimam filiam mihi relinque! Parce ei!’</p>
+        <p>Dum rogat, eheu, filia iam cadit.</p>
+        <p>Nunc dolet Niobe. Diu sedet inter exanimes filios et filias.</p>
+        <p>Non iam se movet. Paulatim in saxum vertitur.</p>
+        <p>Quodam die ventus saxum in patriam Niobes rapit.</p>
+        <p>Ibi nunc etiam saxum videre potes simile feminae.</p>
+        <p>Saxum aliquando ‘lacrimat’: lacrimae Niobes sunt.</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='scripts/2a.js') }}"></script>
+</body>
+</html>
+{% endblock %}

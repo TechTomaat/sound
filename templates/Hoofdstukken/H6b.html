@@ -1,0 +1,41 @@
+{% extends "base.html"  %}
+
+{% block content %}
+<head>
+    <title>Latijn Leren</title>
+</head>
+<body>
+    <div id="container">
+        <h2>Latijn Leren H6b</h2>
+        <p id="latijn-woord">woord</p>
+        <input type="text" id="antwoord" placeholder="Jouw vertaling">
+        <button onclick="controleerAntwoord()">Controleer</button>
+        <p id="feedback"></p>
+        <button id="volgendeButton" onclick="nieuwWoord()" style="display:none;">Volgende</button>
+        <button id="opdrachtOpnieuwButton" style="display: none;" onclick="opdrachtOpnieuw()">Opdracht Opnieuw</button>
+        <button id="homeschermButton" style="display: none;" onclick="gaNaarHome()">Terug naar Homescherm</button>
+    </div>
+
+    <div class="container-tekst">
+        <p>Ibi Thisbe circumspectiebat et Pyramum quaerebat.</p>
+        <p>Subito corpus procul iacere vidit et appropinquavit.</p>
+        <p>Corpus Pyrami erat!</p>
+        <p>Velamen et gladium vidit et exclamavit:</p>
+        <p>‘Pyrrame, tua carissima Thisbe te vocat!</p>
+        <p>Cur te ipse necavisti? Egone causa mortis tuae fui?</p>
+        <p>Dum te exspecto, lea venit. Ideo in antrum fugi.</p>
+        <p>Aspice me! Vivo, lea me non necavit!</p>
+        <p>Pyrame, Pyrame, responde mihi!’ Thisbe semper exclamabat.</p>
+        <p>Pyramus autem ei non respondebat nec se movebat.</p>
+        <p>Tum Thisbe gladium de corpore Pyrami traxit et dixit:</p>
+        <p>‘O parentes, amorem nostrum vetuistis,</p>
+        <p>sed mortem vetare non potuistis. Vos nunc rogo:</p>
+        <p>corpora nostra uno sepulcro condite.’</p>
+        <p>Deinde gladio Pyrami se necavit.</p>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='scripts/6b.js') }}"></script>
+</body>
+</html>
+{% endblock %}

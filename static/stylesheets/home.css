@@ -1,0 +1,48 @@
+.home-container {
+    background: white;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    text-align: center;
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: -3%;
+  left: -5%;
+  height: 100%;
+  width: 15%;
+  background-image: url("bestanden/zuil.png");
+  background-position: left -3%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: -3%;
+  right: -5%;
+  height: 100%;
+  width: 15%;
+  background-image: url("bestanden/zuil.png");
+  background-position: right -3%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+img.logo {
+  margin-left: 1%;
+  margin-top: 1%;
+  margin-bottom: -1%;
+  width: 5%;
+} 

@@ -1,0 +1,39 @@
+{% extends "base.html"  %}
+
+{% block content %}
+<head>
+    <title>Latijn Leren</title>
+</head>
+<body>
+    <div id="container">
+        <h2>Latijn Leren H6a</h2>
+        <p id="latijn-woord">woord</p>
+        <input type="text" id="antwoord" placeholder="Jouw antwoord">
+        <button onclick="controleerAntwoord()">Controleer</button>
+        <p id="feedback"></p>
+        <button id="volgendeButton" onclick="nieuwWoord()" style="display:none;">Volgende</button>
+        <button id="opdrachtOpnieuwButton" style="display: none;" onclick="opdrachtOpnieuw()">Opdracht Opnieuw</button>
+        <button id="homeschermButton" style="display: none;" onclick="gaNaarHome()">Terug naar Homescherm</button>
+    </div>
+
+    <div class="container-tekst">
+        <p>Ecce Pyramus venit. Circumspicit: ubi Thisbe est?</p>
+        <p>Vestigia leae in pulvere videt et horret.</p>
+        <p>Tum velamen cruentum Thisbes invenit.</p>
+        <p>Dum lacrimae oculos complent, dicit:</p>
+        <p>‘O Thisbe, quid accidit? Ubique vestigia leae video.</p>
+        <p>Te autem non video, sed velamen tuum.</p>
+        <p>Mene exspectavisti et tum lea te necavit?</p>
+        <p>Eheu, cur parentibus non paruimus?</p>
+        <p>Cur domos reliquimus et huc venimus?</p>
+        <p>Cur sero veni? Mors tua mea culpa est.’</p>
+        <p>Tum velamen sustulit et ei oscula dedit.</p>
+        <p>Deinde ad arborem adiit. Non dubitavit,</p>
+        <p>sed gladium strinxit et se necavit.</p>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='scripts/6a.js') }}"></script>
+</body>
+</html>
+{% endblock %}

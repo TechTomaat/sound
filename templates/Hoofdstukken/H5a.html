@@ -1,0 +1,39 @@
+{% extends "base.html"  %}
+
+{% block content %}
+<head>
+    <title>Latijn Leren</title>
+</head>
+<body>
+    <div id="container">
+        <h2>Latijn Leren H5a</h2>
+        <p id="latijn-woord">woord</p>
+        <input type="text" id="antwoord" placeholder="Jouw vertaling">
+        <button onclick="controleerAntwoord()">Controleer</button>
+        <p id="feedback"></p>
+        <button id="volgendeButton" onclick="nieuwWoord()" style="display:none;">Volgende</button>
+        <button id="opdrachtOpnieuwButton" style="display: none;" onclick="opdrachtOpnieuw()">Opdracht Opnieuw</button>
+        <button id="homeschermButton" style="display: none;" onclick="gaNaarHome()">Terug naar Homescherm</button>
+    </div>
+
+    <div class="container-tekst">
+        <p>Ecce venit Niobe! Irata feminis dicit:</p>
+        <p>‘Quid video? Cur Latonae sacra facitis?</p>
+        <p>Cur Latonam colitis? Cur eam mihi praeferre audetis?</p>
+        <p>Mihi genus clarum est: Iupiter avus meus est et Tantalus pater.</p>
+        <p>Gentes Phrygiae me timent.</p>
+        <p>Ampion coniunx rex Thebarum est.</p>
+        <p>Ubique divitias in regia video.</p>
+        <p>Formosa sum.</p>
+        <p>Mihi septem filii et septem filiae sunt.</p>
+        <p>Fortuna mihi numquam nocere poterit!</p>
+        <p>Latonae duo liberi tantum sunt: Apollo et Diana.</p>
+        <p>Dea tamquam orba est. Ideo vobis suadeo:</p>
+        <p>domum redite et me pro Latona colite.’</p>
+        <p>Feminae ei parent et abeunt.</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='scripts/2a.js') }}"></script>
+</body>
+</html>
+{% endblock %}
