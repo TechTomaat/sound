@@ -8,11 +8,11 @@ app.config["WTF_CSRF_ENABLED"] = False
 
 @app.route('/')
 def home1():
-    return render_template('home.html')
+    return render_template('index.html')
 
 @app.route('/home')
 def home():
-    return render_template('home.html')
+    return render_template('index.html')
 
 @app.route('/oefenen')
 def oefenen():
@@ -24,7 +24,7 @@ def hoofdstukken(naam):
 
 @app.route('/redirect_home')
 def redirect_home():
-    return redirect(url_for('home'))
+    return redirect(url_for('index'))
 
 @app.route('/hulp')
 def hulp():
