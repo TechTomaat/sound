@@ -6,7 +6,7 @@ app = Flask(__name__)
 app.config["SECRET_KEY"] = "my_secret"
 app.config["WTF_CSRF_ENABLED"] = False
 
-@app.route('/')
+@app.route('/', methods=["GET"])
 def home1():
     return render_template('index.html')
 
