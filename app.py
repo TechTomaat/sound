@@ -6,13 +6,13 @@ app = Flask(__name__)
 app.config["SECRET_KEY"] = "my_secret"
 app.config["WTF_CSRF_ENABLED"] = False
 
-@app.route('/', methods=["GET"])
+@app.route('/')
 def home1():
-    return render_template('index.html')
+    return render_template('home.html')
 
 @app.route('/home')
 def home():
-    return render_template('index.html')
+    return render_template('home.html')
 
 @app.route('/oefenen')
 def oefenen():
@@ -24,11 +24,11 @@ def hoofdstukken(naam):
 
 @app.route('/redirect_home')
 def redirect_home():
-    return redirect(url_for('index'))
+    return redirect(url_for('home'))
 
 @app.route('/hulp')
 def hulp():
     return render_template('hulp.html')
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0', port=5001, debug=True)
