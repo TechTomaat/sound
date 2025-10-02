@@ -4,12 +4,14 @@ const woorden = [
   { latijn: "Pyramus vocavit Thisben \n waar of niet waar?", nederlands: "niet waar" },
   { latijn: "Pyramus et Thisbe vivunt \n waar of niet waar?", nederlands: "niet waar" },
   { latijn: "Thisbe expectavit leam \n waar of niet waar?", nederlands: "niet waar" },
-  { latijn: "Quid Thisbe appropinquavit? \n\n Vul in: Thisbe appropinquavit corpus .....", nederlands: "Pyrami" },
-  { latijn: "Quid Pyramo clamavit? \n\n Vul in: ..... Pyramo clamavit ", nederlands: "Thisbe" },
-  { latijn: "(Pyramus/Thisbe) Circumspicit. \n\n Vul de juiste optie in:", nederlands: "Thisbe" },
-  { latijn: "Thisbe appropinquavit leae/Pyramo. \n\n Vul de juiste optie in:", nederlands: "Pyramo" },
-  { latijn: "Thisbe est (cara Pyramo/soror Pyrami). \n\n Vul de juiste optie in:", nederlands: "cara Pyramo" },
-  { latijn: "Thisbe rogavit (Parentes/Pyramus). \n\n Vul de juiste optie in:", nederlands: "Parentes" }
+  { latijn: "Quod accidit, cum Thisbe pyramum exspectavit?? \n\n Vul het missende woord in: Subito ..... vidit et appropinquavit.", nederlands: "corpus" },
+  { latijn: "Quid Thisbe appropinquavit? \n\n Vul het missende woord in: Thisbe appropinquavit corpus .....", nederlands: "Pyrami" },
+  { latijn: "Quod Thisbe intravit, cum lea venit?? \n\n Vul het missende woord in: Thisbe intravit, cum lea venit. Ideo in ..... fugi.", nederlands: "antrum" },
+  { latijn: "Quid Pyramo clamavit? \n\n Vul het missende woord in: ..... Pyramo clamavit ", nederlands: "Thisbe" },
+  { latijn: "(Pyramus/Thisbe) Circumspicit. \n\n Kies de juiste optie tussen de haakjes:", nederlands: "Thisbe" },
+  { latijn: "Thisbe appropinquavit leae/Pyramo. \n\n Kies de juiste optie tussen de haakjes:", nederlands: "Pyramo" },
+  { latijn: "Thisbe est (cara Pyramo/soror Pyrami). \n\n Kies de juiste optie tussen de haakjes:", nederlands: "cara Pyramo" },
+  { latijn: "Thisbe rogavit (Parentes/Pyramus). \n\n Kies de juiste optie tussen de haakjes:", nederlands: "Parentes" }
 ];
 
 let huidigWoord;
