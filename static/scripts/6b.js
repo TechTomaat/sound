@@ -1,14 +1,15 @@
 const woorden = [
   { latijn: "Corpus Pyrami movebat \n waar of niet waar?", nederlands: "niet waar" },
-  { latijn: "Thisbe iit Pyramum \n waar of niet waar?", nederlands: "waar" },
-  { latijn: "Pyramus vocavit Thisbe \n waar of niet waar?", nederlands: "niet waar" },
-  { latijn: "Pyramus et Thisbe viveunt \n waar of niet waar?", nederlands: "niet waar" },
+  { latijn: "Thisbe ad Pyramum iit \n waar of niet waar?", nederlands: "waar" },
+  { latijn: "Pyramus vocavit Thisben \n waar of niet waar?", nederlands: "niet waar" },
+  { latijn: "Pyramus et Thisbe vivunt \n waar of niet waar?", nederlands: "niet waar" },
   { latijn: "Thisbe expectavit leam \n waar of niet waar?", nederlands: "niet waar" },
   { latijn: "Quid Thisbe appropinquavit? \n\n Vul in: Thisbe appropinquavit corpus .....", nederlands: "Pyrami" },
   { latijn: "Quid Pyramo clamavit? \n\n Vul in: ..... Pyramo clamavit ", nederlands: "Thisbe" },
-  { latijn: "Quod accidit, cum Thisbe Pyramum exspectavit? \n\n Citeer tussen regel 6 en 7 één zin:", nederlands: "lea venit" },
-  { latijn: "Quod Thisbe intravit, cum lea venit? \n\n Citeer tussen regel 6 en 8 één zin:", nederlands: "Ideo in antrum fugi." },
-  { latijn: "Quod Thisbe facit post parentibus rogavit? \n\n Citeer tussen regel 13 en 15 één zin:", nederlands: "Deinde gladio Pyrami se necavit." }
+  { latijn: "(Pyramus/Thisbe) Circumspicit. \n\n Vul de juiste optie in:", nederlands: "Thisbe" },
+  { latijn: "Thisbe appropinquavit leae/Pyramo. \n\n Vul de juiste optie in:", nederlands: "Pyramo" },
+  { latijn: "Thisbe est (cara Pyramo/soror Pyrami). \n\n Vul de juiste optie in:", nederlands: "cara Pyramo" },
+  { latijn: "Thisbe rogavit (Parentes/Pyramus). \n\n Vul de juiste optie in:", nederlands: "Parentes" }
 ];
 
 let huidigWoord;
